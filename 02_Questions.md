@@ -6,95 +6,92 @@
 
 1. Display all columns from the `sales` table.
 
-2. Display only the `Product`, `Quantity`, and `Sales` columns.
+2. Display only the `Order ID`, `Amount`, `Profit`, and `Quantity` columns.
 
 3. Display the first 10 records from the `sales` table.
 
-4. Display all unique values of `Region`.
+4. Display all unique `Category` values.
 
-5. Display all records sorted by `Sales` from lowest to highest.
+5. Display all unique `PaymentMode` values.
 
 ---
 
 ## WHERE / Filtering
 
-6. Find all records where `Quantity` is greater than 10.
+6. Find all orders where `Amount` is greater than 5000.
 
-7. Find all records where `Sales` is less than 500.
+7. Find all orders where `Profit` is greater than 1000.
 
-8. Find all records where `Sales` is equal to 1000.
+8. Find all orders where `Quantity` is greater than 5.
 
-9. Find all records where `Sales` is between 500 and 2000.
+9. Find all orders where `Category` is `Electronics`.
 
-10. Find all records where `Quantity` is not equal to 5.
+10. Find all orders where `PaymentMode` is `UPI`.
 
-11. Find all records where `Customer_Name` is NULL.
+11. Find all orders where `Amount` is between 1000 and 5000.
 
-12. Find all records where `Customer_Name` is NOT NULL.
+12. Find all orders where `Quantity` is less than or equal to 3.
 
-13. Find all records where `Region` is either `North` or `South`.
+13. Find all orders where `Category` is either `Electronics` or `Furniture`.
 
-14. Find all records where `Sales` is greater than 1000 AND `Quantity` is greater than 5.
+14. Find all orders where `Amount` is greater than 5000 AND `Profit` is greater than 500.
 
-15. Find all records where `Region` is `East` OR `Sales` is greater than 2000.
+15. Find all orders where `PaymentMode` is `UPI` OR `PaymentMode` is `Credit Card`.
 
 ---
 
 ## ORDER BY
 
-16. Sort all records by `Sales` from highest to lowest.
+16. Display all orders sorted by `Amount` from highest to lowest.
 
-17. Find the top 5 records with the highest `Sales`.
+17. Display all orders sorted by `Profit` from lowest to highest.
 
-18. Find the 5 records with the lowest `Sales`.
+18. Find the top 5 orders with the highest `Amount`.
+
+19. Find the top 5 orders with the highest `Profit`.
+
+20. Find the 10 orders with the lowest `Quantity`.
 
 ---
 
 ## Aggregate Functions
 
-19. Find the total sales using `SUM()`.
+21. Find the total `Amount` using `SUM()`.
 
-20. Find the average sales using `AVG()`.
+22. Find the total `Profit` using `SUM()`.
 
-21. Find the maximum sales using `MAX()`.
+23. Find the average `Amount` using `AVG()`.
 
-22. Find the minimum sales using `MIN()`.
+24. Find the maximum `Amount` using `MAX()`.
 
-23. Count the total number of records using `COUNT()`.
+25. Find the minimum `Amount` using `MIN()`.
 
-24. Count the number of unique customers.
+26. Count the total number of records using `COUNT()`.
 
 ---
 
 ## GROUP BY
 
-25. Find the number of orders for each `Region`.
+27. Find the total `Amount` for each `Category`.
 
-26. Find the total sales for each `Region`.
+28. Find the total `Profit` for each `PaymentMode`.
 
-27. Find the average sales for each `Product`.
+29. Find the average `Amount` for each `Category`.
 
-28. Find the maximum sales for each `Region`.
-
----
-
-## HAVING
-
-29. Find the regions where total sales are greater than 10,000.
-
-30. Find the top 3 products based on total sales.
+30. Find the total `Amount` for each `State`.
 
 ---
 
-Topics covered:
+
+## Topics Covered
 
 - SELECT
 - DISTINCT
 - WHERE
-- AND / OR
+- AND
+- OR
 - IN
 - BETWEEN
-- NULL
 - ORDER BY
 - LIMIT
 - SUM()
@@ -103,4 +100,3 @@ Topics covered:
 - MAX()
 - COUNT()
 - GROUP BY
-- HAVING
