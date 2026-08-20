@@ -21,3 +21,10 @@ FROM sales;
 -- Q5: Display all unique PaymentMode values.
 SELECT DISTINCT(payment_mode)
 FROM sales;
+
+-- WHERE / Filtering
+
+-- Q6: Find all orders where Amount is greater than 5000.
+SELECT * 
+FROM orders 
+WHERE amount > 5000;
