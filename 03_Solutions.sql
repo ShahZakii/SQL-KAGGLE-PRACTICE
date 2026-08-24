@@ -28,3 +28,8 @@ FROM sales;
 SELECT * 
 FROM orders 
 WHERE amount > 5000;
+
+-- Q7: Find all orders where Profit is greater than 1000.
+SELECT *
+FROM orders 
+WHERE profit > 1000;
