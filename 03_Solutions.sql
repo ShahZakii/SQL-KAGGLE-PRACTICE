@@ -33,3 +33,23 @@ WHERE amount > 5000;
 SELECT *
 FROM orders 
 WHERE profit > 1000;
+
+-- Q8: Find all orders where Profit is greater than 1000.
+SELECT *
+FROM orders
+WHERE profit > 1000;
+
+-- Q9: Find all orders where Quantity is greater than 5.
+SELECT *
+FROM orders 
+WHERE quantity > 5;
+
+-- Q10: Find all orders where Category is Electronics.
+SELECT *
+FROM orders 
+WHERE category = 'Electronics';
+
+-- Q11: Find all orders where PaymentMode is UPI.
+SELECT * 
+FROM orders 
+WHERE payment_mode = 'UPI';
