@@ -53,3 +53,24 @@ WHERE category = 'Electronics';
 SELECT * 
 FROM orders 
 WHERE payment_mode = 'UPI';
+
+-- Q12: Find all orders where Quantity is less than or equal to 3.
+SELECT *
+FROM orders 
+WHERE quantity <= 3;
+
+-- Q13: Find all orders where Category is either Electronics or Furniture.
+SELECT *
+FROM orders 
+WHERE category IN ('electronics', 'furniture');
+
+-- Q14: Find all orders where Amount is greater than 5000 AND Profit is greater than 500.
+SELECT *
+FROM orders 
+WHERE amount > 5000
+	AND profit > 500;
+
+-- Q15: Find all orders where PaymentMode is UPI OR PaymentMode is Credit Card.
+SELECT *
+FROM orders 
+WHERE paymentmode IN ('UPI','Credit Card');
