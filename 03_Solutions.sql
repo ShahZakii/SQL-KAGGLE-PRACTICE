@@ -74,3 +74,33 @@ WHERE amount > 5000
 SELECT *
 FROM orders 
 WHERE paymentmode IN ('UPI','Credit Card');
+
+-- ORDER BY
+
+-- Q16: Display all orders sorted by Amount from highest to lowest.
+SELECT *
+FROM orders 
+ORDER BY amount DESC;
+
+-- Q17: Display all orders sorted by Profit from lowest to highest.
+SELECT *
+FROM orders 
+ORDER BY profit ASC;
+
+-- Q18: Find the top 5 orders with the highest Amount.
+SELECT *
+FROM orders 
+ORDER BY amount DESC
+LIMIT 5;
+
+-- Q19: Find the top 5 orders with the highest Profit.
+SELECT *
+FROM orders 
+ORDER BY profit DESC
+LIMIT 5;
+
+-- Q20: Find the 10 orders with the lowest Quantity.
+SELECT *
+FROM orders 
+ORDER BY quantity ASC
+LIMIT 10;
