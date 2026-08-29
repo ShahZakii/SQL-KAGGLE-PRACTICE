@@ -104,3 +104,29 @@ SELECT *
 FROM orders 
 ORDER BY quantity ASC
 LIMIT 10;
+
+-- Aggregate Functions
+
+-- Q21: Find the total Amount using SUM().
+SELECT SUM(amount) AS total_amount
+FROM orders;
+
+-- Q22: Find the total Profit using SUM().
+SELECT SUM(profit) AS total_profit
+FROM orders;
+
+-- Q23: Find the average Amount using AVG().
+SELECT AVG(amount) AS avg_amount
+FROM orders;
+
+-- Q24: Find the maximum Amount using MAX().
+SELECT MAX(amount) AS max_amount
+FROM orders;
+
+-- Q25: Find the minimum Amount using MIN().
+SELECT MIN(amount) AS min_amount
+FROM orders;
+
+-- Q26:Count the total number of records using COUNT().
+SELECT COUNT(order_id) AS num_of_records
+FROM orders;
