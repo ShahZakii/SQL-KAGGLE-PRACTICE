@@ -127,6 +127,28 @@ FROM orders;
 SELECT MIN(amount) AS min_amount
 FROM orders;
 
--- Q26:Count the total number of records using COUNT().
+-- Q26: Count the total number of records using COUNT().
 SELECT COUNT(order_id) AS num_of_records
 FROM orders;
+
+-- GROUP BY
+
+-- Q27: Find the total Amount for each Category.
+SELECT SUM(amount)
+FROM orders
+GROUP BY category;
+
+-- Q28: Find the total Profit for each PaymentMode.
+SELECT SUM(profit)
+FROM orders
+GROUP BY paymentmode;
+
+-- Q29: Find the average Amount for each Category.
+SELECT AVG(amount)
+FROM orders
+GROUP BY category;
+
+-- Q30: Find the total Amount for each State.
+SELECT SUM(amount)
+FROM orders
+GROUP BY state;
