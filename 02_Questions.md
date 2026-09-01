@@ -82,6 +82,17 @@
 
 ---
 
+ ## String and Pattern Matching
+
+31. Find all customers whose name starts with the letter `A`.
+
+32. Find all customers whose name ends with the letter `a`.
+
+33. Find all customers whose name contains `Kumar`.
+
+34. Find all orders from cities that start with the letter `M`.
+
+35. Find all states containing the word `Pradesh`.
 
 ## Topics Covered
 
@@ -100,3 +111,4 @@
 - MAX()
 - COUNT()
 - GROUP BY
+- String and Pattern matching
