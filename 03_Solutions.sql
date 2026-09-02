@@ -152,3 +152,10 @@ GROUP BY category;
 SELECT SUM(amount)
 FROM orders
 GROUP BY state;
+
+-- String and Pattern Matching
+
+-- Q31: Find all customers whose name starts with the letter A.
+SELECT *
+FROM orders 
+WHERE CustomerName LIKE 'A%';
