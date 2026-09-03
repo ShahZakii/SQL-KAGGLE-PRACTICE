@@ -159,3 +159,23 @@ GROUP BY state;
 SELECT *
 FROM orders 
 WHERE CustomerName LIKE 'A%';
+
+-- Q32: Find all customers whose name ends with the letter a.
+SELECT *
+FROM orders 
+WHERE CustomerName LIKE '%a';
+
+-- Q33: Find all customers whose name contains Kumar.
+SELECT *
+FROM orders 
+WHERE CustomerName LIKE '%Kumar%';
+
+-- Q34: Find all orders from cities that start with the letter M.
+SELECT *
+FROM orders 
+WHERE cities LIKE 'M%';
+
+-- Q35: Find all states containing the word Pradesh.
+SELECT *
+FROM orders 
+WHERE cities LIKE '%Pradesh%';
