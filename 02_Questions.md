@@ -94,6 +94,19 @@
 
 35. Find all states containing the word `Pradesh`.
 
+## DISTINCT
+
+36. Display all unique states.
+
+37. Display all unique cities.
+
+38. Display all unique sub-categories.
+
+39. Display all unique combinations of `Category` and `Sub-Category`.
+
+40. Count the total number of unique cities.
+
+
 ## Topics Covered
 
 - SELECT
@@ -112,3 +125,4 @@
 - COUNT()
 - GROUP BY
 - String and Pattern matching
+- DISTINCT
