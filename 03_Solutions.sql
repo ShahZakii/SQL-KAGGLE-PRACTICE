@@ -179,3 +179,9 @@ WHERE cities LIKE 'M%';
 SELECT *
 FROM orders 
 WHERE cities LIKE '%Pradesh%';
+
+-- DISTINCT
+
+-- Q36: Display all unique states.
+SELECT DISTINCT cities
+FROM orders;
