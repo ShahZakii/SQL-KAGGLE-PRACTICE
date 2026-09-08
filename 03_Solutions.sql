@@ -183,5 +183,21 @@ WHERE cities LIKE '%Pradesh%';
 -- DISTINCT
 
 -- Q36: Display all unique states.
-SELECT DISTINCT cities
+SELECT DISTINCT states
+FROM orders;
+
+-- Q37: Display all unique cities.
+SELECT DISTINCT cities 
+FROM orders;
+
+-- Q38: Display all unique sub-categories.
+SELECT DISTINCT sub_categories
+FROM orders;
+
+-- Q39: Display all unique combinations of Category and Sub-Category.
+SELECT DISTINCT category, sub_category
+FROM orders;
+
+-- Q40: Count the total number of unique cities.
+SELECT COUNT(DISTINT cities) AS total_unique_cities
 FROM orders;
