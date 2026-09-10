@@ -106,6 +106,23 @@
 
 40. Count the total number of unique cities.
 
+## GROUP BY
+
+41. Find the total sales amount for each city.
+
+42. Find the total profit for each state.
+
+43. Find the total quantity sold for each category.
+
+44. Find the number of orders in each city.
+
+45. Find the average profit for each category.
+
+46. Find the average quantity sold for each sub-category.
+
+47. Find the maximum amount for each category.
+
+48. Find the minimum profit for each state.
 
 ## Topics Covered
 
@@ -126,3 +143,4 @@
 - GROUP BY
 - String and Pattern matching
 - DISTINCT
+- GROUP BY
