@@ -201,3 +201,30 @@ FROM orders;
 -- Q40: Count the total number of unique cities.
 SELECT COUNT(DISTINT cities) AS total_unique_cities
 FROM orders;
+
+-- GROUP BY
+
+-- Q41: Find the total sales amount for each city.
+SELECT SUM(sales) AS total_sales
+FROM orders
+GROUP BY city;
+
+-- Q42: Find the total profit for each state.
+SELECT SUM(profit) AS total_profit
+FROM orders
+GROUP BY state;
+
+-- Q43: Find the total quantity sold for each category.
+SELECT SUM(quantity) AS total_quantity
+FROM orders
+GROUP BY category;
+
+-- Q44: Find the number of orders in each city.
+SELECT COUNT(sales) AS number_of_sales
+FROM orders
+GROUP BY city;
+
+-- Q45: Find the average profit for each category.
+SELECT AVG(profit) AS total_profit
+FROM orders
+GROUP BY category;
