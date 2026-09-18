@@ -225,6 +225,21 @@ FROM orders
 GROUP BY city;
 
 -- Q45: Find the average profit for each category.
-SELECT AVG(profit) AS total_profit
+SELECT AVG(profit) AS avg_profit
 FROM orders
 GROUP BY category;
+
+-- Q46: Find the average quantity sold for each sub-category.
+SELECT AVG(quantity) AS avg_quantity
+FROM orders
+GROUP BY sub_category;
+
+-- Q47: Find the maximum amount for each category.
+SELECT MAX(amount) AS max_amount
+FROM orders
+GROUP BY category;
+
+-- Q48: Find the minimum profit for each state.
+SELECT MIN(profit) AS min_profit
+FROM orders
+GROUP BY state;
