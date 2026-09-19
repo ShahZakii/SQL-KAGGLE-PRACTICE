@@ -124,6 +124,18 @@
 
 48. Find the minimum profit for each state.
 
+## HAVING
+
+49. Find categories where the total sales amount is greater than 10,000.
+
+50. Find states where the total profit is greater than 5,000.
+
+51. Find cities that have more than 10 orders.
+
+52. Find categories where the average amount is greater than 1,000.
+
+53. Find payment modes used in more than 20 orders.
+
 ## Topics Covered
 
 - SELECT
@@ -144,3 +156,4 @@
 - String and Pattern matching
 - DISTINCT
 - GROUP BY
+- HAVING
