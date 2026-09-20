@@ -243,3 +243,17 @@ GROUP BY category;
 SELECT MIN(profit) AS min_profit
 FROM orders
 GROUP BY state;
+
+-- HAVING
+
+-- Q49: Find categories where the total sales amount is greater than 10,000.
+SELECT category, SUM(sales) 
+FROM orders
+GROUP BY category
+HAVING SUM(sales) > 10000;
+
+-- Q50: Find states where the total profit is greater than 5,000.
+SELECT states, SUM(profit)
+FROM orders
+GROUP BY states
+HAVING SUM(profit) > 5000;
