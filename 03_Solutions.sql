@@ -257,3 +257,23 @@ SELECT states, SUM(profit)
 FROM orders
 GROUP BY states
 HAVING SUM(profit) > 5000;
+
+-- Q51: Find cities that have more than 10 orders.
+SELECT city, 
+	   COUNT(order) AS order_count
+FROM orders
+GROUP BY city
+HAVING COUNT(order) > 10;
+
+-- Q52: Find categories where the average amount is greater than 1,000.
+SELECT categories,
+  	   AVG(amount) AS avg_amount
+FROM orders
+GROUP BY categories
+HAVING AVG(amount) > 1000;
+
+-- Q53: Find payment modes used in more than 20 orders.
+SELECT payment_mode, COUNT(order_id) AS order_count
+FROM orders
+GROUP BY payment_mode
+HAVING COUNT(order_id) > 20;
