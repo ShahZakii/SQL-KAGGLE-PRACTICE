@@ -136,6 +136,18 @@
 
 53. Find payment modes used in more than 20 orders.
 
+## Multiple Conditions
+
+54. Find all orders where `Category` is `Furniture` and `Quantity` is greater than 3.
+
+55. Find all orders where `Category` is `Electronics` and `Profit` is greater than 500.
+
+56. Find all orders where `Amount` is greater than 5,000 and `PaymentMode` is `UPI`.
+
+57. Find all orders from a specific state with an amount greater than 1,000.
+
+58. Find all orders where `Quantity` is between 2 and 5.
+
 ## Topics Covered
 
 - SELECT
